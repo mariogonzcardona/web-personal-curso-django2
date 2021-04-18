@@ -1,9 +1,10 @@
-{% extends 'core/base.html' %}
-{%block title%}Portada{%endblock%}
+{% extends "core/base.html" %}  
+{% block title %} Portada {% endblock %}  
+{% block background %}{% load static %} {% static 'core/img/home-bg.jpg' %}  {% endblock %}
+{% block header %} 
+<div class="row">
+    <h1>Mario González</h1>  
+    <span class="subheading">Ingeniero en Sistemas</span>          
+</div>
+{% endblock %} 
 
-{%block background%}{%load static%}{% static 'core/img/home-bg.jpg'%}{%endblock%}
-
-{%block headers%}
-<h1>Juan Pérez</h1>
-<span class="subheading">Ingeniero Industrial</span>
-{%endblock%}
